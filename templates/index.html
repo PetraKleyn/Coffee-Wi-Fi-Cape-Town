@@ -1,0 +1,56 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url({{ url_for('static', filename='assets/img/coffee_shop.jpg') }}">
+
+
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>Cape Town Coffee & Wi-Fi</h1>
+          <span class="subheading">The best work and study-friendly cafes in Cape Town, South Africa, with free and reliable Wi-Fi
+                hotspots, ample power sockets, and comfy seating areas.</p></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({{ url_for('static', filename='assets/img/truth.jpg') }}">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Truth Coffee Roasting</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({{ url_for('static', filename='assets/img/rosetta.jpg') }}">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rosetta Roastery Cafe</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({{ url_for('static', filename='assets/img/groundart.jpg') }}">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ground Art Coffee</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Pager-->
+      <div class="d-flex justify-content-end mb-4">
+        <a class="btn btn-secondary text-uppercase" href="/cafes">See All Cafes →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}
